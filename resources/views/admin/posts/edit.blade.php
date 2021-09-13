@@ -1,6 +1,6 @@
 <x-layout>
     <x-setting :heading="'Edit New Post: ' . $post->title">
-        <form action="{{ route('post.update', $post) }}" method="POST" enctype="multipart/form-data"
+        <form action="{{ route('posts.update', $post) }}" method="POST" enctype="multipart/form-data"
         >
             @csrf
             @method('PATCH')

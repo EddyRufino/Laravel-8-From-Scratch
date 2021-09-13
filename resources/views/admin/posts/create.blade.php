@@ -1,6 +1,6 @@
 <x-layout>
     <x-setting heading="Publish New Post">
-        <form action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
 
             <x-form.input name="title" />
